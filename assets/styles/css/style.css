@@ -1,4 +1,4 @@
-/*------ Wild Card ------*/
+/* ***** Wild Card ***** */
 
 *,
 *::before,
@@ -9,15 +9,17 @@
     box-sizing: inherit;
 }
 
-/*------ Generic------*/
+/* ***** Generic ***** */
 
 :root {
     font-size: 62.5%;
 }
 
 body {
+    width: 100vw;
+    height: 90vh;
     box-sizing: border-box;
-    color: #e2e2e2;
+    background-color: #e2e2e2;
     font-family: "Marvel", sans-serif;
     position: relative;
 }
@@ -26,12 +28,14 @@ a {
     text-decoration: none;
 }
 
-/*------ Navigation ------*/
+/* ***** Navigation ***** */
 
 .navbar__logo-container {
     width: 10rem;
     height: 5rem;
-    margin-left: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
 }
 
 .navbar {
@@ -40,7 +44,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(212, 212, 212);
+    background-color: rgb(185, 185, 185);
 }
 
 .navbar__toggler {
@@ -55,7 +59,7 @@ a {
     color: rgb(34, 34, 34);
 }
 
-/*------ Navigation Dropdown Menu------*/
+/* ***** Navigation Dropdown Menu ***** */
 
 .navbar__link-container {
     display: none;
@@ -92,4 +96,64 @@ a {
     font-style: italic;
     font-weight: 700;
     color: rgba(212, 212, 212);
+}
+
+/* ***** Shopping Cart ***** */
+
+.cart-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cart__wrapper {
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cart__heading-wrapper {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart__content-container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart__purchase {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cart__img-container {
+    width: 50%;
+    height: 100%;
+}
+
+.cart__img-wrapper {
+    max-width: 40rem;
+    max-height: 40rem;
+}
+
+.cart__img {
+    width: 100%;
+    height: 100%;
 }
