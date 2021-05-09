@@ -9,6 +9,77 @@
     box-sizing: inherit;
 }
 
+/*------ Generic------*/
+
+:root {
+    font-size: 62.5%;
+}
+
 body {
     box-sizing: border-box;
+    color: #f3f3f3;
+}
+
+/*------ Navigation ------*/
+
+.navbar__logo-container {
+    width: 10rem;
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(212, 212, 212, 0.5);
+}
+
+.navbar__toggler {
+    margin-right: 4rem;
+}
+
+.fa-bars {
+    font-size: 4rem;
+    color: rgb(34, 34, 34);
+}
+
+/*------ Navigation Dropdown Menu------*/
+
+.navbar__link-container {
+    display: none;
+}
+
+.navbar__link-container.menu {
+    display: block;
+}
+
+.navbar__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(109, 81, 73);
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+}
+
+.navbar__link {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.navbar__link--item {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--unicornIvory);
+    opacity: 70%;
+}
+
+.navbar__link--item:hover {
+    opacity: 100%;
 }
