@@ -4,11 +4,51 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="assets/images/mm.svg" aria-hidden="true" />
+        <link rel="icon" href="assets/images/mm-favicon.svg" aria-hidden="true" />
         <title>Morristown Mandolines</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="assets/styles/style.css" />
     </head>
     <body>
-        <h1>Morristown Mantolines</h1>
+        <!-- ***** Navigation ***** -->
+        <header>
+            <nav class="navbar">
+                <a class="navbar__logo" href="#home">
+                    <svg>
+                        <use xlink:href="assets/images/mm-logo.svg#mm-logo"></use>
+                    </svg>
+                </a>
+                <a class="navbar__toggler" href="#" onclick="menuToggler()">
+                    <span
+                        ><i class="fas fa-bars" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></i
+                    ></span>
+                </a>
+                <div class="navbar__link-container" id="navDropdownMenu">
+                    <ul class="navbar__link-wrapper animate__animated animate__fadeInRight">
+                        <li class="navbar__link">
+                            <a class="navbar__link--item" href="#" onclick="openMenu">A-style</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a class="navbar__link--item" href="#">F-style</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a class="navbar__link--item" href="#">About MM</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a class="navbar__link--item" href="#">Contact Us</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a class="navbar__link--item navbar__link--obliviate" href="#" onclick="closeMenu()">Close Menu</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ***** /.Navigation ***** -->
     </body>
 </html>
