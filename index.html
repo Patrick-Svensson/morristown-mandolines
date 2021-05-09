@@ -5,7 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="assets/images/mm-favicon.svg" aria-hidden="true" />
-        <title>Morristown Mandolines</title>
+        <title>Morristown Mandolins</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;1,700&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
@@ -23,7 +26,7 @@
                         <use xlink:href="assets/images/mm-logo.svg#mm-logo"></use>
                     </svg>
                 </a>
-                <a class="navbar__toggler" href="#" onclick="menuToggler()">
+                <a class="navbar__toggler" href="#" onclick="openMenu()">
                     <span
                         ><i class="fas fa-bars" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></i
                     ></span>
@@ -31,7 +34,10 @@
                 <div class="navbar__link-container" id="navDropdownMenu">
                     <ul class="navbar__link-wrapper animate__animated animate__fadeInRight">
                         <li class="navbar__link">
-                            <a class="navbar__link--item" href="#" onclick="openMenu">A-style</a>
+                            <a class="navbar__link--item navbar__link--close" href="#" onclick="closeMenu()">&#10006;</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a class="navbar__link--item" href="#">A-style</a>
                         </li>
                         <li class="navbar__link">
                             <a class="navbar__link--item" href="#">F-style</a>
@@ -45,13 +51,11 @@
                         <li class="navbar__link">
                             <a class="navbar__link--item" href="#">Contact Us</a>
                         </li>
-                        <li class="navbar__link">
-                            <a class="navbar__link--item navbar__link--obliviate" href="#" onclick="closeMenu()">Close Menu</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <!-- ***** /.Navigation ***** -->
+        <script src="assets/styles/script/script.js"></script>
     </body>
 </html>

@@ -18,6 +18,12 @@
 body {
     box-sizing: border-box;
     color: #f3f3f3;
+    font-family: "Barlow", sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*------ Navigation ------*/
@@ -34,11 +40,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(212, 212, 212, 0.5);
+    background-color: rgba(212, 212, 212);
 }
 
 .navbar__toggler {
     margin-right: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
 }
 
 .fa-bars {
@@ -57,29 +66,30 @@ body {
 }
 
 .navbar__link-wrapper {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: rgb(109, 81, 73);
-    border-radius: 0.5rem;
+    background-color: rgb(34, 34, 34);
     padding-right: 1rem;
     position: absolute;
-    top: 6rem;
+    top: 8rem;
     right: 0;
 }
 
 .navbar__link {
     list-style-type: none;
-    padding: 1rem;
+    padding: 2rem 3rem 0 2rem;
+}
+
+.navbar__link:first-child {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
 .navbar__link--item {
-    font-size: 1.3rem;
+    font-size: 3rem;
+    font-style: italic;
     font-weight: 700;
-    color: var(--unicornIvory);
-    opacity: 70%;
-}
-
-.navbar__link--item:hover {
-    opacity: 100%;
+    color: rgba(212, 212, 212);
 }
