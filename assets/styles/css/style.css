@@ -22,6 +22,7 @@ body {
     background-color: #e2e2e2;
     font-family: "Marvel", sans-serif;
     position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -34,8 +35,8 @@ a {
     width: 10rem;
     height: 5rem;
     position: absolute;
-    top: 2rem;
-    left: 1rem;
+    top: 1.6rem;
+    left: 2rem;
 }
 
 .navbar {
@@ -54,7 +55,7 @@ a {
     right: 1rem;
 }
 
-.fa-bars {
+.fa-align-justify {
     font-size: 4rem;
     color: rgb(34, 34, 34);
 }
