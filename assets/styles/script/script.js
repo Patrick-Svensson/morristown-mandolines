@@ -2,7 +2,6 @@
 
 const slideInMenu = document.querySelector(".navbar__toggler");
 const slideOutMenu = document.querySelector(".navbar__link--close");
-const close = document.querySelector("#navDropdownMenu");
 
 slideInMenu.addEventListener("click", () => {
     document.querySelector(".navbar__link-wrapper").classList.remove("animate__slideOutRight");
