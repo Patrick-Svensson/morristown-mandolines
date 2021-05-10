@@ -45,7 +45,7 @@ h3 {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 a {
@@ -174,28 +174,93 @@ a {
     justify-content: flex-end;
 }
 
+.cart__total-line {
+    background-color: rgb(34, 34, 34);
+}
+
 .cart__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 0.1rem solid rgb(34, 34, 34);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16),
+        0 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cart__submit-wrapper {
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .cart__terms {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.cart__btn-next-container {
     width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cart__terms-accept {
+    width: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.cart__total-line {
-    background-color: rgb(34, 34, 34);
+.cart__checkbox-label {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#terms {
+    width: 3rem;
+    height: 3rem;
+}
+
+.cart__btn {
+    padding: 1rem 4rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16),
+        0 8px 8px rgba(0, 0, 0, 0.24);
+    text-decoration: none;
+}
+
+.cart__btn--terms {
+    font-size: 1.2rem;
+    background-color: rgb(146, 146, 146);
+    color: rgb(245, 245, 245);
+    border: 0.05rem solid rgb(68, 68, 68);
+}
+
+.cart__btn--terms:hover {
+    background-color: rgb(131, 131, 131);
+    color: rgb(228, 228, 228);
+}
+
+.cart__btn--next {
+    font-size: 2.4rem;
+    background-color: rgb(72, 121, 72);
+    color: rgb(207, 236, 207);
+    border: 0.05rem solid rgb(30, 61, 30);
+}
+
+.cart__btn--next:hover {
+    background-color: rgb(57, 102, 57);
+    color: rgb(179, 212, 179);
+}
+
+.cart__btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.24);
 }

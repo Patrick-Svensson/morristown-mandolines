@@ -89,11 +89,15 @@
                 </div>
                 <div class="cart__submit-wrapper">
                     <div class="cart__terms">
-                        <input type="checkbox" id="terms" name="terms" />
-                        <label for="terms">I ACCEPT TERMS</label>
-                        <button class="cart__terms-btn">READ TERMS</button>
+                        <div class="cart__terms-accept">
+                            <input type="checkbox" id="terms" name="terms" />
+                            <label class="cart__checkbox-label" for="terms">I ACCEPT TERMS</label>
+                        </div>
+                        <button class="cart__btn cart__btn--terms">READ TERMS</button>
                     </div>
-                    <button class="cart__check-out-btn">NEXT</button>
+                    <div class="cart__btn-next-container">
+                        <button class="cart__btn cart__btn--next">NEXT</button>
+                    </div>
                 </div>
             </div>
         </section>
