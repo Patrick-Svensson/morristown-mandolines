@@ -17,3 +17,9 @@ function openMenu() {
     let open = document.querySelector("#navDropdownMenu");
     open.classList.add("menu");
 }
+
+function checkoutBtnActive() {
+    document.querySelector("#cartTerms").checked == true
+        ? document.querySelector(".cartBtnNext").classList.add("cartBtnNextActive")
+        : document.querySelector(".cartBtnNext").classList.remove("cartBtnNextActive");
+}

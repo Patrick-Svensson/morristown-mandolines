@@ -42,7 +42,7 @@
                 <div class="navbar__link-container" id="navDropdownMenu">
                     <ul class="navbar__link-wrapper animate__animated">
                         <li class="navbar__link">
-                            <a class="navbar__link--item navbar__link--close" href="#">&#10006;</a>
+                            <a class="navbar__link--item navbar__link--close" href="#">&#215;</a>
                         </li>
                         <li class="navbar__link">
                             <a class="navbar__link--item" href="#">A-style</a>
@@ -69,7 +69,10 @@
         <section class="cart-container">
             <div class="cart__wrapper">
                 <div class="cart__heading-wrapper">
-                    <h1 class="cart-heading">Morristown Mandolins</h1>
+                    <h1 class="cart-heading">
+                        Morristown<br />
+                        Mandolins
+                    </h1>
                     <h2>My Cart</h2>
                 </div>
                 <div class="cart__content-container">
@@ -90,18 +93,48 @@
                 <div class="cart__submit-wrapper">
                     <div class="cart__terms">
                         <div class="cart__terms-accept">
-                            <input type="checkbox" id="terms" name="terms" />
+                            <input type="checkbox" id="cartTerms" onclick="checkoutBtnActive()" name="terms" />
                             <label class="cart__checkbox-label" for="terms">I ACCEPT TERMS</label>
                         </div>
                         <button class="cart__btn cart__btn--terms">READ TERMS</button>
                     </div>
                     <div class="cart__btn-next-container">
-                        <button class="cart__btn cart__btn--next">NEXT</button>
+                        <button class="cart__btn cartBtnNext">TO CHECKOUT</button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ***** /.Main ***** -->
+
+        <!-- ***** Modal ***** -->
+        <div class="modal-container">
+            <div class="modal">
+                <span class="modal__X"></span>
+                <div class="modal__content">
+                    <h2 class="modal__heading">Terms and Conditions</h2>
+                    <p class="modal__text">
+                        < Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus arcu ut pulvinar dignissim.
+                        Praesent maximus, mi in tristique aliquet, urna arcu semper purus, ut ornare nunc ipsum ac ex. Duis ut
+                        molestie lorem. Donec a lectus quis purus fermentum pulvinar. Sed nec ex tellus. Aenean in sem vulputate,
+                        malesuada ex eget, tempus nisl. Ut sed sapien turpis. In hac habitasse platea dictumst. Sed vehicula porta
+                        augue, at ornare nulla congue eu. Integer mattis ut enim sed elementum. Etiam condimentum aliquam egestas.
+                        Phasellus quis tellus fringilla mi interdum consectetur. Phasellus tellus leo, dignissim ac fringilla
+                        quis, consectetur et erat. Donec porttitor metus vel tortor rutrum faucibus. Cras nec viverra ante. Fusce
+                        porttitor semper lorem, placerat rutrum orci lacinia vel. In congue, metus vel congue luctus, elit neque
+                        varius dolor, in pulvinar urna lorem ac augue. Suspendisse potenti. Praesent aliquet molestie lorem, vitae
+                        convallis justo mollis sit amet. Duis ornare leo nec tellus bibendum, volutpat ullamcorper purus mattis.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent
+                        eget sollicitudin purus. Nunc venenatis ut sapien a dictum. Praesent nibh felis, placerat at sodales ac,
+                        tincidunt ac ipsum. Aenean dapibus enim ut sem porta, ac maximus libero scelerisque. Pellentesque ligula
+                        tellus, tincidunt sit amet arcu eget, elementum dictum ex. Proin sem purus, finibus id scelerisque a,
+                        aliquet quis metus. Suspendisse condimentum blandit sapien, eget ornare justo lobortis ac. Suspendisse
+                        consectetur dapibus lorem quis fermentum. Morbi mi mauris, placerat vel mollis quis, semper eget nisl.
+                        Mauris vel purus vulputate nibh viverra dapibus. /p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ***** /.Modal ***** -->
 
         <script src="assets/styles/script/script.js"></script>
     </body>
