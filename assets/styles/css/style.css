@@ -22,7 +22,30 @@ body {
     background-color: #e2e2e2;
     font-family: "Marvel", sans-serif;
     position: relative;
+    text-transform: uppercase;
     overflow: hidden;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    margin-right: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 2rem;
 }
 
 a {
@@ -120,7 +143,7 @@ a {
 
 .cart__heading-wrapper {
     width: 100%;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -128,33 +151,46 @@ a {
 
 .cart__content-container {
     width: 100%;
-    height: 30vh;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .cart__purchase {
-    width: 30%;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
 .cart__img-container {
-    width: 50%;
+    width: 40%;
     height: 100%;
-}
-
-.cart__img-wrapper {
-    max-width: 40rem;
-    max-height: 40rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .cart__img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.cart__submit-wrapper {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__terms {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
