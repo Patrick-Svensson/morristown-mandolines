@@ -167,7 +167,7 @@ a {
     width: 50%;
     height: 100%;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 2fr 0.2rem 1fr;
     gap: 2rem;
 }
@@ -353,7 +353,7 @@ a {
 
 /* ***** Media Queries ***** */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .cart__content-container {
         height: 50%;
         flex-direction: column-reverse;
