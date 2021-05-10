@@ -209,7 +209,7 @@ a {
     align-items: flex-end;
 }
 
-.cart__btn-next-container {
+.cart__btn-checkout-container {
     width: 60%;
     height: auto;
     display: flex;
@@ -237,7 +237,7 @@ a {
     border-radius: 0.3rem;
 }
 
-.cart__btn--terms {
+.cartTermsBtn {
     font-size: 1.6rem;
     padding: 1rem 2rem;
     background-color: rgb(146, 146, 146);
@@ -245,17 +245,16 @@ a {
     border: 0.05rem solid rgb(68, 68, 68);
 }
 
-.cart__btn--terms:hover {
+.cartTermsBtn:hover {
     background-color: rgb(131, 131, 131);
     color: rgb(228, 228, 228);
 }
-
-.cart__btn--terms:active {
+.cartTermsBtn:active {
     transform: scale(0.98);
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.24);
 }
 
-.cartBtnNext {
+.cartCheckoutBtn {
     font-size: 2rem;
     padding: 2rem 4rem;
     background-color: rgb(72, 121, 72);
@@ -264,16 +263,16 @@ a {
     opacity: 40%;
 }
 
-.cartBtnNextActive {
+.cartCheckoutBtnActive {
     opacity: 100%;
 }
 
-.cartBtnNextActive:hover {
+.cartCheckoutBtnActive:hover {
     background-color: rgb(57, 102, 57);
     color: rgb(179, 212, 179);
 }
 
-.cartBtnNextActive:active {
+.cartCheckoutBtnActive:active {
     transform: scale(0.98);
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.24);
 }
@@ -287,8 +286,8 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    opacity: 1;
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
@@ -298,7 +297,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(124, 124, 124);
     width: 60vw;
     height: 60vh;
     border-radius: 0.5rem;
@@ -332,6 +331,10 @@ a {
     background-color: rgb(228, 228, 228);
 }
 
+.modal__X-wrapper:hover {
+    background-color: rgb(206, 206, 206);
+}
+
 .modal__text {
     text-transform: initial;
 }
@@ -339,6 +342,13 @@ a {
 .modal__X {
     font-size: 3rem;
     color: rgb(34, 34, 34);
+}
+
+.ActivateModalContainer {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 /* ***** Media Queries ***** */
@@ -367,7 +377,7 @@ a {
         align-items: center;
     }
 
-    .cart__btn-next-container {
+    .cart__btn-checkout-container {
         justify-content: center;
     }
 }
@@ -409,11 +419,11 @@ a {
         font-size: 1.6rem;
     }
 
-    .cart__btn--terms {
+    .cartTermsBtn {
         font-size: 1rem;
     }
 
-    .cartBtnNext {
+    .cartCheckoutBtn {
         font-size: 1.5rem;
         padding: 1.2rem 2.2rem;
     }
