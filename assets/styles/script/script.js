@@ -1,3 +1,5 @@
+"use strict";
+
 // ***** Variables *****
 const slideInMenu = document.querySelector(".navbar__toggler");
 const slideOutMenu = document.querySelector(".navbar__link--close");
@@ -9,7 +11,7 @@ const page = document.querySelector(".page");
 const open = document.querySelector("#navDropdownMenu");
 
 // ***** Toggle Dropdown Menu *****
-slideInMenu.addEventListener("click", function (openMenu) {
+slideInMenu.addEventListener("click", () => {
     open.classList.add("menu");
     document.querySelector(".navbar__link-wrapper").classList.remove("animate__slideOutRight");
     document.querySelector(".navbar__link-wrapper").classList.add("animate__slideInRight");
