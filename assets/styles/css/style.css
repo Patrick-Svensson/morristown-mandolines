@@ -202,7 +202,7 @@ a {
 }
 
 .cart__terms {
-    width: 40rem;
+    width: 45rem;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -222,6 +222,7 @@ a {
     font-weight: 700;
     font-style: italic;
     display: inline-block;
+    margin-right: 0.5rem;
 }
 
 #cartTerms {
@@ -240,8 +241,8 @@ a {
 }
 
 .cartTermsBtn {
-    font-size: 1.6rem;
-    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
     background-color: rgb(146, 146, 146);
     color: rgb(245, 245, 245);
     border: 0.05rem solid rgb(68, 68, 68);
@@ -257,8 +258,8 @@ a {
 }
 
 .cartCheckoutBtn {
-    font-size: 2rem;
-    padding: 2rem 4rem;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
     background-color: rgb(72, 121, 72);
     color: rgb(207, 236, 207);
     border: 0.05rem solid rgb(30, 61, 30);
@@ -421,12 +422,9 @@ a {
         font-size: 1.6rem;
     }
 
+    .cartCheckoutBtn,
     .cartTermsBtn {
         font-size: 1rem;
-    }
-
-    .cartCheckoutBtn {
-        font-size: 1.5rem;
         padding: 1.2rem 2.2rem;
     }
 }
