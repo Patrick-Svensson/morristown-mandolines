@@ -73,6 +73,10 @@ a {
     right: 1rem;
 }
 
+.navbar__toggler--hide {
+    visibility: hidden;
+}
+
 .navbar__toggler-icon {
     width: 6.2rem;
     height: 6.2rem;
@@ -97,9 +101,15 @@ a {
     text-align: left;
     background-color: rgb(34, 34, 34);
     padding-right: 1rem;
-    position: absolute;
+    position: fixed;
     top: 8rem;
+    right: -100vw;
+    transition: all 500ms ease-in-out;
+}
+
+.navbar__link-wrapper--slide {
     right: 0;
+    z-index: 1;
 }
 
 .navbar__link {

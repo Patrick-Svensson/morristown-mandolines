@@ -13,13 +13,13 @@ const open = document.querySelector("#navDropdownMenu");
 // ***** Toggle Dropdown Menu *****
 slideInMenu.addEventListener("click", () => {
     open.classList.add("menu");
-    document.querySelector(".navbar__link-wrapper").classList.remove("animate__slideOutRight");
-    document.querySelector(".navbar__link-wrapper").classList.add("animate__slideInRight");
+    document.querySelector(".navbar__link-wrapper").classList.add("navbar__link-wrapper--slide");
+    document.querySelector(".navbar__toggler").classList.add("navbar__toggler--hide");
 });
 
 slideOutMenu.addEventListener("click", () => {
-    document.querySelector(".navbar__link-wrapper").classList.remove("animate__slideInRight");
-    document.querySelector(".navbar__link-wrapper").classList.add("animate__slideOutRight");
+    document.querySelector(".navbar__toggler").classList.remove("navbar__toggler--hide");
+    document.querySelector(".navbar__link-wrapper").classList.remove("navbar__link-wrapper--slide");
 });
 
 // ***** Check Checkbox *****
