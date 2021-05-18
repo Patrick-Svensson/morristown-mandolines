@@ -69,12 +69,13 @@ a {
 .navbar__toggler {
     margin-right: 4rem;
     position: absolute;
-    top: 2rem;
+    top: 1.5rem;
     right: 1rem;
 }
 
-.fa-align-justify {
-    font-size: 4rem;
+.navbar__toggler-icon {
+    width: 6.2rem;
+    height: 6.2rem;
     color: rgb(34, 34, 34);
 }
 
