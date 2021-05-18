@@ -70,7 +70,7 @@ a {
     margin-right: 4rem;
     position: absolute;
     top: 1.5rem;
-    right: 1rem;
+    right: 0;
 }
 
 .navbar__toggler--hide {
@@ -239,7 +239,7 @@ a {
 #cartTerms {
     width: 3rem;
     height: 3rem;
-    margin-right: 1rem;
+    margin-right: 0.8rem;
     cursor: pointer;
 }
 
